@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gildedrose.GildedRoseTest" time="0.113" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gildedrose.GildedRoseTest" time="0.135" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/sourabhsethi/GTRefactoringExercise/target/test-classes:/Users/sourabhsethi/GTRefactoringExercise/target/classes:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/sourabhsethi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="java.class.path" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/test-classes:/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/classes:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/sourabhsethi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -18,21 +18,21 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/sourabhsethi/GTRefactoringExercise/target/surefire/surefirebooter1650274188759668761.jar /Users/sourabhsethi/GTRefactoringExercise/target/surefire 2022-05-24T15-00-04_154-jvmRun1 surefire5460707802069847041tmp surefire_02095035335344824290tmp"/>
+    <property name="sun.java.command" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/surefire/surefirebooter6372120312598438893.jar /Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/surefire 2022-05-26T09-28-02_098-jvmRun1 surefire8121552946508655712tmp surefire_01211878068880634822tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="surefire.test.class.path" value="/Users/sourabhsethi/GTRefactoringExercise/target/test-classes:/Users/sourabhsethi/GTRefactoringExercise/target/classes:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/sourabhsethi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/test-classes:/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/classes:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/sourabhsethi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/sourabhsethi/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/sourabhsethi"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre"/>
-    <property name="basedir" value="/Users/sourabhsethi/GTRefactoringExercise"/>
+    <property name="basedir" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject"/>
     <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/sourabhsethi/GTRefactoringExercise/target/surefire/surefirebooter1650274188759668761.jar"/>
+    <property name="surefire.real.class.path" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject/target/surefire/surefirebooter6372120312598438893.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -48,7 +48,7 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/xw/blqchywj6v3b8g6qm5jmvfv80000gn/T/"/>
     <property name="java.version" value="1.8.0_151"/>
-    <property name="user.dir" value="/Users/sourabhsethi/GTRefactoringExercise"/>
+    <property name="user.dir" value="/Users/sourabhsethi/javaRefactoringProject/javaRefactoringProject"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -62,5 +62,14 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="foo" classname="com.gildedrose.GildedRoseTest" time="0.075"/>
+  <testcase name="the_case_of_backstage_when_seliin_date_has_passed" classname="com.gildedrose.GildedRoseTest" time="0.037"/>
+  <testcase name="the_case_of_sulfuras_which_is_never_sold_or_decreases_in_quality" classname="com.gildedrose.GildedRoseTest" time="0.008"/>
+  <testcase name="the_case_of_aged_brie_whose_quality_increases_as_older_it_gets" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="the_case_of_conjured_when__quality_decreases_twice_as_fast" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="the_case_of_backstage_when_seliin_is_less_than_five_days" classname="com.gildedrose.GildedRoseTest" time="0.007"/>
+  <testcase name="the_quality_of_an_item_is_never_negative" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
+  <testcase name="the_quality_of_an_item_is_never_more_than_fifty" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="the_case_of_backstage_when_seliin_is_less_than_ten_days" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="once_the_sell_by_date_has_passed_then_Quality_degrades_twice_as_fast" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="the_sellin_value__and_quality_decreases" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
 </testsuite>

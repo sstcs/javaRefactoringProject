@@ -19,22 +19,15 @@ class GildedRose {
 		List<Item> itemsWithAged=new ArrayList<Item>();
 		initializingItems(items,itemsExceptAgedAndBackAndConjuredAndSulfuras,itemsWithSulfuras,itemsWithBackStage,itemsWithConjured,itemsWithAged);
 		
-		for (Item item : itemsExceptAgedAndBackAndConjuredAndSulfuras) {
-			item.quality = ((item.sellIn <= 0) ? item.quality - 2 : item.quality - 1);
-			item.quality = (item.quality < 0) ? 0 : item.quality;
-			item.sellIn = item.sellIn - 1;
-		}
+		updateQualityForItemsExceptAgedAndBackAndConjuredAndSulfuras(itemsExceptAgedAndBackAndConjuredAndSulfuras);
+		updateQualityForItemsWithConjured(itemsWithConjured);
+		updateQualityForItemsWithSulfuras(itemsWithSulfuras);
+		updateQualityForItemsWithAged(itemsWithAged);
+		updateQualityForItemsWithBackStage(itemsWithBackStage);
+		
+      }
 
-		for (Item item : itemsWithConjured) {
-			item.quality = item.quality - 2;
-			item.quality = (item.quality < 0) ? 0 : item.quality;
-			item.sellIn = item.sellIn - 1;
-		}
-
-		for (Item item : itemsWithSulfuras) {
-			item.quality = 80;
-		}
-
+	private void updateQualityForItemsWithBackStage(List<Item> itemsWithBackStage) {
 		for (Item item : itemsWithBackStage) {
 			/*The below ternary line of code is equal to following 7 lines of code
 			 * if(item.sellIn<=0)
@@ -50,13 +43,41 @@ class GildedRose {
 			item.quality = (item.quality > 50) ? 50 : item.quality;
 			item.sellIn = item.sellIn - 1;
 		}
+		
+	}
 
+	private void updateQualityForItemsWithAged(List<Item> itemsWithAged) {
 		for (Item item : itemsWithAged) {
 			item.quality = (item.sellIn <= 0) ? item.quality + 2 : item.quality + 1;
 			item.quality = (item.quality > 50) ? 50 : item.quality;
 			item.sellIn = item.sellIn - 1;
 		}
-      }
+	}
+
+	private void updateQualityForItemsWithSulfuras(List<Item> itemsWithSulfuras) {
+		for (Item item : itemsWithSulfuras) {
+			item.quality = 80;
+		}
+		
+	}
+
+	private void updateQualityForItemsWithConjured(List<Item> itemsWithConjured) {
+		for (Item item : itemsWithConjured) {
+			item.quality = item.quality - 2;
+			item.quality = (item.quality < 0) ? 0 : item.quality;
+			item.sellIn = item.sellIn - 1;
+		}
+		
+	}
+
+	private void updateQualityForItemsExceptAgedAndBackAndConjuredAndSulfuras(List<Item> itemsExceptAgedAndBackAndConjuredAndSulfuras) {
+		for (Item item : itemsExceptAgedAndBackAndConjuredAndSulfuras) {
+			item.quality = ((item.sellIn <= 0) ? item.quality - 2 : item.quality - 1);
+			item.quality = (item.quality < 0) ? 0 : item.quality;
+			item.sellIn = item.sellIn - 1;
+		}
+		
+	}
 
 	private void initializingItems(Item[] items, List<Item> itemsExceptAgedAndBackAndConjuredAndSulfuras,List<Item> itemsWithSulfuras, List<Item> itemsWithBackStage, List<Item> itemsWithConjured,List<Item> itemsWithAged) {
 		for(Item item:items) {
